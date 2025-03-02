@@ -1,0 +1,35 @@
+/* Achievements.css */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto; /* Let slides adjust to content */
+}
+
+.swiper-slide-tilt {
+  width: 70%; /* Adjust width to fit tilt effect, tweak as needed */
+  max-width: 800px; /* Match max-w-[800px] from JSX */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgba(59, 130, 246, 0.6);
+}
+
+.swiper-pagination-bullet {
+  background: rgba(4, 92, 234, 0.6);
+}
