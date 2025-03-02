@@ -1,6 +1,29 @@
+// src/components/Contact.jsx
 import React from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_bawhlvc", // Your EmailJS Service ID
+        "template_rseqiph", // Your EmailJS Template ID
+        e.target,
+        "HAJDs4yN20wQNq58T" // Your EmailJS User/Public Key
+      )
+      .then((res) => {
+        alert("Message sent successfully!!");
+        setTimeout(() => {
+          window.location.reload(); // Refresh the page after 1 second
+        }, 1000); // Delay to let the alert show
+      })
+      .catch((err) => {
+        console.log("Error sending email:", err);
+      });
+  }
+
   return (
     <section className="max-w-screen-xl mx-auto px-4 pb-12">
       <h2 className="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
@@ -16,8 +39,8 @@ const Contact = () => {
           />
         </div>
         {/* Form */}
-        <form className="w-full" name="contactUS" data-netlify="true">
-          {/* Hidden input for Netlify form detection */}
+        <form className="w-full" name="contactUS" onSubmit={sendEmail}>
+          {/* Hidden input for Netlify (optional, remove if not using Netlify) */}
           <input type="hidden" name="form-name" value="contactUS" />
 
           {/* Name Field */}
@@ -45,6 +68,7 @@ const Contact = () => {
               name="name"
               className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
               placeholder="Enter your name"
+              required
             />
           </div>
 
@@ -69,11 +93,12 @@ const Contact = () => {
               </svg>
             </div>
             <input
-              type="email" // Changed to type="email" for better validation
+              type="email"
               id="email"
               name="email"
               className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
               placeholder="name@gmail.com"
+              required
             />
           </div>
 
@@ -90,6 +115,7 @@ const Contact = () => {
               name="message"
               rows="8"
               className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+              required
             ></textarea>
           </div>
 
