@@ -14,7 +14,7 @@ const Footer = () => {
       <ul className="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
         <li>
           <a
-            href="https://www.linkedin.com/in/anuragsinghbam/"
+            href="https://www.linkedin.com/in/parikshit-rajpurohit/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -32,7 +32,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="https://twitter.com/anuragsinghbam"
+            href="https://x.com/ParikshitR24"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -50,7 +50,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="https://www.instagram.com/procodrr/"
+            href="https://www.instagram.com/parikshitrajpurohit56/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -68,7 +68,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="mailto:anuragsinghbam@gmail.com"
+            href="mailto:parikshitrajpurohit56@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -81,22 +81,6 @@ const Footer = () => {
                 fill="currentColor"
                 d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
               />
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.youtube.com/@procodrr"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <svg
-              className="w-5 hover:text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 576 512"
-              fill="currentColor"
-            >
-              <path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
             </svg>
           </a>
         </li>
