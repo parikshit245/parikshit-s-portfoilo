@@ -348,7 +348,7 @@ const HeroSection = ({ scrollToProjects, scrollToAchievements }) => {
               Parikshit Rajpurohit
             </h1>
             <p className="pointer-events-none font-['Merriweather'] italic mb-5 md:mb-8 text-[13px] md:text-[17px] mr-12">
-              2nd year Computer Science student at PCCoE, Pune.
+              3rd year Computer Science student at PCCoE, Pune.
             </p>
             <button
               className="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667] relative hover:scale-110 ease-in-out duration-100 group cursor-pointer"
