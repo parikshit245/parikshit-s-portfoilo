@@ -418,7 +418,7 @@ const HeroSection = ({ scrollToProjects, scrollToAchievements }) => {
                   ABOUT ME
                 </h2>
                 <p className="text-sm sm:text-base md:text-base text-white pt-2  text-justify md:text-left px-4 sm:px-0">
-                  I'm a 2nd-year Computer Science student with a passion for
+                  I'm a 3rd-year Computer Science student with a passion for
                   full-stack development and problem-solving. I enjoy building
                   dynamic web applications, exploring new technologies, and
                   improving my skills in algorithms and databases to create
@@ -593,3 +593,4 @@ const HeroSection = ({ scrollToProjects, scrollToAchievements }) => {
 };
 
 export default HeroSection;
+
